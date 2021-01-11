@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./index1.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACE GAME</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Font -->
+    <!-- Font tiêu đề: font-family: 'Space Mono', monospace; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Font nội dung: font-family: 'Space Mono', monospace; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- Search -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <!-- Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./test.css">
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="cont">
+    <!-- Navbar Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgba(0, 0, 0, 0.795); z-index: 18;">
+
+        <div class="logo">
+            <a href="#" class="navbar-brand">
+                <img
+                    src="https://scontent.fhan2-5.fna.fbcdn.net/v/t1.15752-9/130779752_2885941484970550_7174886012815255459_n.png?_nc_cat=109&ccb=2&_nc_sid=ae9488&_nc_ohc=kA0g9WfKUZwAX_QtBKl&_nc_ht=scontent.fhan2-5.fna&oh=ccba668fdadba4814cb44fa411ff655b&oe=5FFB9751">
+            </a>          
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle navcol" style="font-family: spacefont;" href="#"
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        News & Event
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./NEWnEVENT/PS.html">PC</a>
+                        <a class="dropdown-item" href="./NEWnEVENT/PS.html">Play Station</a>
+                        <a class="dropdown-item" href="./NEWnEVENT/mb.html">Mobile</a>
+                        <a class="dropdown-item" href="./NEWnEVENT/XBOX.html">XBOX</a>
+                        <a class="dropdown-item" href="./NEWnEVENT/SWITCH.HTML">Switch</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle navcol" style="font-family: spacefont;" href="/BESTS.html"
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Best
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./BESTS/GoY.html">Games of the Year</a>
+                        <a class="dropdown-item" href="./BESTS/GoALL.html">Games of All Time</a>
+                        <a class="dropdown-item" href="./BESTS/NewGame.html">New Games</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle navcol" style="font-family: spacefont;" href="/REVIEW.html"
+                        id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        REVIEW
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./REVIEW/ACTION.html">ACTION</a>
+                        <a class="dropdown-item" href="./REVIEW/ADVENTURE.html">ADVENTURE</a>
+                        <a class="dropdown-item" href="./REVIEW/BOARD.html">BOARD & CARD</a>
+                        <a class="dropdown-item" href="./REVIEW/PUZZLE.html">PUZZLE</a>
+                        <a class="dropdown-item" href="./REVIEW/MULTIPLAYER.html">MULTIPLAYER</a>
+                        <a class="dropdown-item" href="./REVIEW/SPORTS.html">SPORTS</a>
+                        <a class="dropdown-item" href="./REVIEW/STRATEGY.html">STRATEGY</a>
+                        <a class="dropdown-item" href="./REVIEW/SIMULATION.html">SIMULATION</a>
+                        <a class="dropdown-item" href="./REVIEW/SPECIALS.html">SPECIALS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./REVIEW/18+.html">18+</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="searchbar">
+                <input class="search_input" type="text" name="" placeholder="Search...">
+                <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Carosel mới -->
+<div class="slidewarpper">
+    <div class="cacslide">
+        <ul class="slide">
+            <li class="licuaslide active2">
+                <div class="motslide">
+                    <div class="anh" style="background-image: url(img/assa.jpg)"></div>
+                    <img src="https://themes.muffingroup.com/be/webdesign/wp-content/uploads/2016/11/home_webdesign_slide3_cover3.png" class="_1" alt="">
+                    <img src="https://themes.muffingroup.com/be/webdesign/wp-content/uploads/2016/11/home_webdesign_slide3_cover3.png"  class="_2">
+                    <img class="_3" 
+                    src="https://themes.muffingroup.com/be/webdesign/wp-content/uploads/revslider/webdesign/home_webdesign_slide3_cover2.png" alt="">
+                    <div class="text">
+                        <h2 style="font-size: 65px;font-family: spacefont;">NEWS</h2>
+                        <logo>Assassin’s Creed: Origin</logo>
+                        <div class="ke"></div>
+                        <p style="font-family: 'Space Mono', monospace;">Sư sụp đổ của một đế chế & Khởi nguyên của một “đức tin”</p>
+                        <div style="font-family: 'Space Mono', monospace;" class="nut">XEM THÊM</div>
+                    </div>
+                </div>
+            </li>
+            <li class="licuaslide">
+                    <div class="motslide">
+                        <div class="anh" style="background-image: url(img/reddead.png)"></div>
+                        <img src="https://themes.muffingroup.com/be/webdesign/wp-content/uploads/2016/11/home_webdesign_slide4_cover3.png" alt="" class="_1">
+                        <img src="https://themes.muffingroup.com/be/webdesign/wp-content/uploads/2016/11/home_webdesign_slide4_cover3.png" alt="" class="_2">
+                        <img src="https://themes.muffingroup.com/be/webdesign/wp-content/uploads/revslider/webdesign/home_webdesign_slide4_cover2.png" alt="" class="_3">
+                        <div class="text">
+                            <h2 style="font-size: 65px;font-family: spacefont;">NEWS</h2>
+                            <logo>Red Dead Redemption</logo>
+                            <div class="ke"></div>
+                            <p style="font-family: 'Space Mono', monospace;">Red Dead Redemption: Hành trình từ thất bại đến siêu phẩm – Red Dead Redemption 2</p>
+                            <div style="font-family: 'Space Mono', monospace;" class="nut">XEM THÊM</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="licuaslide">
+                        <div class="motslide">
+                            <div class="anh" style="background-image: url(img/thumb-1920-997132.png)"></div>
+                            <img src="https://themes.muffingroup.com/be/webdesign/wp-content/uploads/2016/11/home_webdesign_slide1_cover3.png" alt="" class="_1">
+                            <img src="https://themes.muffingroup.com/be/webdesign/wp-content/uploads/2016/11/home_webdesign_slide1_cover3.png" alt="" class="_2">
+                            <img src="https://themes.muffingroup.com/be/webdesign/wp-content/uploads/revslider/webdesign/home_webdesign_slide1_cover2.png" alt="" class="_3">
+                            <div class="text">
+                                <h2 style="font-size: 65px;font-family: spacefont;">NEWS</h2>
+                            <logo>Devil May Cry 5</logo>
+                            <div class="ke"></div>
+                            <p style="font-family: 'Space Mono', monospace;">Devil May Cry 5 ẩn chứa 1 kết thúc bí mật khiến cho game thủ phải giật mình</p>
+                            <div style="font-family: 'Space Mono', monospace;" class="nut">XEM THÊM</div>
+                            </div>
+                        </div>
+                    </li>
+        </ul>
+    </div>
+
+    <div class="points">
+    <ul class="carosel-points">
+        <li class=" point active">1</li>
+        <li class="point">2</li>
+        <li class="point">3</li>
+    </ul>
+    
+</div> <i class="fas fa-caret-left" id="previousButton"></i>
+     <i class="fas fa-caret-right" id="nextButton"></i>
+</div>
+    <!-- <div class="contain"> -->
+        <!-- Carosel -->
+        <!-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner slidecol">
+                <div class="carousel-item active"> -->
+                    <!-- <img src="img/Assassin’s Creed Valhalla Ultra HD 4k wallpaper 2.jpg" class="d-block w-100" -->
+                    <!-- <img src="img/Assassin’s Creed Valhalla Ultra HD 4k wallpaper 2.jpg" class="d-block w-100"
+                        alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/1116469.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/thumb-1920-926723.jpg" class="d-block w-100" alt="...">
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <hr>
+    </div> -->
+    <div class="web-body">
+        <hr>
+            <div class="ct1">
+                <div></div>
+                <div><h3 style="font-family: spacefont;">News & Event</h3></div>
+                <div><a href="#">Xem thêm</a></div>
+            </div>
+        
+         <div class= "news">               
+             <div data-aos="fade-up-left" class="tt">
+                 <img src="img/cont1.jpg"> 
+                 <hr><br>
+                 <h4><a href="https://genk.vn/he-lo-vu-tru-xoay-quanh-nhan-vat-cua-chrono-cam-hung-tu-cr7-trong-free-fire-20201218115639745.chn?fbclid=IwAR1Mu4jOTS2FKGTgjsy3tjXqU3IUdgTIcBSlQfHW6jBfs8NkUcRf1yidBZQ">Hé lộ vũ trụ xoay quanh nhân vật của Chrono, cảm hứng từ CR7 trong Free Fire</a></h4>
+                 <p><br>
+                    Chrono - nhân vật được lấy cảm hứng từ Cristiano Ronaldo sẽ chính thức...<a href="https://genk.vn/he-lo-vu-tru-xoay-quanh-nhan-vat-cua-chrono-cam-hung-tu-cr7-trong-free-fire-20201218115639745.chn?fbclid=IwAR1Mu4jOTS2FKGTgjsy3tjXqU3IUdgTIcBSlQfHW6jBfs8NkUcRf1yidBZQ">Xem thêm</a>
+                 </p><br>
+                 <!-- <a href="https://genk.vn/he-lo-vu-tru-xoay-quanh-nhan-vat-cua-chrono-cam-hung-tu-cr7-trong-free-fire-20201218115639745.chn?fbclid=IwAR1Mu4jOTS2FKGTgjsy3tjXqU3IUdgTIcBSlQfHW6jBfs8NkUcRf1yidBZQ"> -->
+             </div>
+             <div data-aos="fade-up" class="tt"> 
+                 <img src="img/cont2.jpg">
+                 <hr><br>
+                 <h4><a href="https://genk.vn/sony-rut-cyberpunk-2077-khoi-playstation-store-va-cho-nguoi-dung-hoan-tien-20201218101139167.chn?fbclid=IwAR23RzKSXio9yK7vHoDQSxuqqR3B2e5ChICjFFzI-WW4eCVNeS5TvRi7Olg">Sony rút Cyberpunk 2077 khỏi PlayStation Store và cho người dùng hoàn tiền</a></h4>
+                 <p>
+                    Nguyên nhân được cho là bởi có quá nhiều người đang không hài lòng với giao dịch mua trò chơi này và ...<a href="https://genk.vn/sony-rut-cyberpunk-2077-khoi-playstation-store-va-cho-nguoi-dung-hoan-tien-20201218101139167.chn?fbclid=IwAR23RzKSXio9yK7vHoDQSxuqqR3B2e5ChICjFFzI-WW4eCVNeS5TvRi7Olg">Xem thêm</a>
+                 </p><br>
+                 <!-- <a href="https://genk.vn/sony-rut-cyberpunk-2077-khoi-playstation-store-va-cho-nguoi-dung-hoan-tien-20201218101139167.chn?fbclid=IwAR23RzKSXio9yK7vHoDQSxuqqR3B2e5ChICjFFzI-WW4eCVNeS5TvRi7Olg"> -->
+             </div>
+             <div data-aos="fade-up-right" class="tt">
+                 <img src="img/cont31.png">
+                 <hr><br>
+                 <h4><a href="https://genk.vn/he-lo-doanh-so-ban-hang-tuan-dau-tien-cua-ps5-va-xbox-series-x-map-mo-chi-ra-van-de-nghiem-trong-ve-nguon-cung-20201119111859903.chn?fbclid=IwAR2WzIgXOrcKVUYFvTWhR8k9YvGfQNMi2zt8TPgs8ELBSAv8AGZKVKxNTkM">Hé lộ doanh số bán hàng tuần đầu tiên của PS5 và Xbox Series X</a></h4>
+                 <p><br>
+                    Gần như toàn bộ giới truyền thông quốc tế cho rằng cả PS5 và Xbox Series X đều đang bị khan hàng thời điểm đầu...<a href="https://genk.vn/he-lo-doanh-so-ban-hang-tuan-dau-tien-cua-ps5-va-xbox-series-x-map-mo-chi-ra-van-de-nghiem-trong-ve-nguon-cung-20201119111859903.chn?fbclid=IwAR2WzIgXOrcKVUYFvTWhR8k9YvGfQNMi2zt8TPgs8ELBSAv8AGZKVKxNTkM" >Xem thêm</a>
+                 </p><br>
+                 <!-- <a href="https://genk.vn/he-lo-doanh-so-ban-hang-tuan-dau-tien-cua-ps5-va-xbox-series-x-map-mo-chi-ra-van-de-nghiem-trong-ve-nguon-cung-20201119111859903.chn?fbclid=IwAR2WzIgXOrcKVUYFvTWhR8k9YvGfQNMi2zt8TPgs8ELBSAv8AGZKVKxNTkM"> -->
+             </div>
+         </div><br><br><br>
+
+
+         <div class= "news">               
+             <div data-aos="fade-up-left" class="tt">
+                 <!-- https://gamek.vn/top-5-tay-cam-choi-game-khong-day-muot-ma-cho-anh-em-quay-tet-2021-20210106161137183.chn -->
+                 <img src="img/cont4.jpg"> 
+                 <hr><br>
+                 <h4><a href="https://gamek.vn/top-5-tay-cam-choi-game-khong-day-muot-ma-cho-anh-em-quay-tet-2021-20210106161137183.chn">Top 5 tay cầm chơi game không dây mượt mà cho anh em 'quẩy' Tết 2021</a></h4>
+                 <p><br>
+                    Không cần đầu tư nhiều, game thủ Việt vẫn có "đồ chơi" ngon để chơi dịp Tết này....<a href="https://gamek.vn/top-5-tay-cam-choi-game-khong-day-muot-ma-cho-anh-em-quay-tet-2021-20210106161137183.chn">Xem thêm</a>
+                 </p>
+                
+             </div>
+             <div data-aos="fade-up" class="tt">
+                 <img src="img/cont5.jpg">
+                 <hr><br>
+                 <h4><a href="https://gamek.vn/tuyen-thu-chuyen-nghiep-noi-tieng-cua-dot-kich-vn-bi-bat-vi-mang-ma-tuy-di-giao-cho-khach-20210106172035368.chn">Tuyển thủ chuyên nghiệp nổi tiếng của Đột Kích VN bị bắt vì "mang ma túy đi giao cho khách"</a></h4>
+                 <p>
+                    Cộng đồng game thủ Đột Kích rúng động khi một tuyển thủ chuyên nghiệp mua bán trái phép chất ma túy...<a href="https://gamek.vn/tuyen-thu-chuyen-nghiep-noi-tieng-cua-dot-kich-vn-bi-bat-vi-mang-ma-tuy-di-giao-cho-khach-20210106172035368.chn">Xem thêm</a>
+                 </p><br>
+             </div>
+             <div data-aos="fade-up-right" class="tt">
+                 <img src="img/cont6.jpg">
+                 <!-- https://gamek.vn/tet-duong-vua-qua-tet-ta-lai-toi-fa-ngoai-viec-ngam-gai-xinh-ra-thi-lam-gi-cho-bot-sau-20210103165139365.chn -->
+                 <hr><br>
+                 <h4><a href="https://gamek.vn/tet-duong-vua-qua-tet-ta-lai-toi-fa-ngoai-viec-ngam-gai-xinh-ra-thi-lam-gi-cho-bot-sau-20210103165139365.chn">Tết dương" vừa qua "Tết ta" lại tới: F.A ngoài việc ngắm "gái xinh" ra thì làm gì cho bớt sầu?</a></h4>
+                 <p>
+                    Tình trạng chung không phải của riêng ai trong những ngày gần Tết, ấy là… cô đơn, lẻ bóng...<a href="https://gamek.vn/tet-duong-vua-qua-tet-ta-lai-toi-fa-ngoai-viec-ngam-gai-xinh-ra-thi-lam-gi-cho-bot-sau-20210103165139365.chn">Xem thêm</a>
+                 </p><br>                
+             </div>
+         </div>
+    </div>
+
+
+    <div class="web-body">
+        <hr>
+        <div class="conatiner">
+            <div class="title_wrapper">
+                <div class="title">
+                    <span>Best</span>
+                </div>
+                <p><a href="#">Games of the Year</a></p>
+                <p><a href="#">Games of All time</a></p>
+                <p><a href="#">New Games</a></p>
+            </div>
+    
+        </div>
+        <div class= "news">               
+            <div data-aos="fade-up-left" class="tt">
+                <img src="img/The_Legend_of_Zelda_Ocarina_of_Time_box_art.png"> 
+                <hr><br>
+                <h4 >
+                   THE LEGEND OF ZELDA: OCARINA OF TIME </h4>
+                <p><br>
+                   <a href="https://www.metacritic.com/game/nintendo-64/the-legend-of-zelda-ocarina-of-time">Xem thêm</a>
+                </p><br>
+                <!-- <a href="https://genk.vn/he-lo-vu-tru-xoay-quanh-nhan-vat-cua-chrono-cam-hung-tu-cr7-trong-free-fire-20201218115639745.chn?fbclid=IwAR1Mu4jOTS2FKGTgjsy3tjXqU3IUdgTIcBSlQfHW6jBfs8NkUcRf1yidBZQ"> -->
+            </div>
+            <div data-aos="fade-up" class="tt"> 
+                <img src="img/skate.jpg">
+                <hr><br>
+                <h4>TONY HAWK'S PRO SKATER 2 </h4>
+                <p>                  
+                   <a href="https://www.metacritic.com/game/playstation/tony-hawks-pro-skater-2">Xem thêm</a>
+                </p><br>
+                <!-- <a href="https://genk.vn/sony-rut-cyberpunk-2077-khoi-playstation-store-va-cho-nguoi-dung-hoan-tien-20201218101139167.chn?fbclid=IwAR23RzKSXio9yK7vHoDQSxuqqR3B2e5ChICjFFzI-WW4eCVNeS5TvRi7Olg"> -->
+            </div>
+            <div data-aos="fade-up-right" class="tt">
+                <img src="img/GTAIV-Boxart.jpg">
+                <hr><br>
+                <h4>
+                   GRAND THEFT AUTO IV</h4>
+                <p><br>
+                   <a href="https://www.metacritic.com/game/playstation-3/grand-theft-auto-iv" >Xem thêm</a>
+                </p><br>
+                <!-- <a href="https://genk.vn/he-lo-doanh-so-ban-hang-tuan-dau-tien-cua-ps5-va-xbox-series-x-map-mo-chi-ra-van-de-nghiem-trong-ve-nguon-cung-20201119111859903.chn?fbclid=IwAR2WzIgXOrcKVUYFvTWhR8k9YvGfQNMi2zt8TPgs8ELBSAv8AGZKVKxNTkM"> -->
+            </div>
+        </div><br><br><br>
+
+
+         <div class= "news">               
+             <div  class="tt ">
+                 <!-- https://gamek.vn/top-5-tay-cam-choi-game-khong-day-muot-ma-cho-anh-em-quay-tet-2021-20210106161137183.chn -->
+                 <img src="img/Soulcalibur_flyer.png"> 
+                 <hr><br>
+                 <h4>SOULCALIBUR </h4>
+                 <p><br>
+                   <a href="https://www.metacritic.com/game/dreamcast/soulcalibur">Xem thêm</a>
+                 </p>
+                
+             </div >
+             <div class="tt">
+                 <img src="img/super-mario-galaxy-1-button-1599258841533.jpg">
+                 <hr><br>
+                 <h4>SUPER MARIO GALAXY "</h4>
+                 <p>
+                    <a href="https://www.metacritic.com/game/wii/super-mario-galaxy">Xem thêm</a>
+                 </p><br>
+             </div>
+             <div class="tt">
+                 <img src="img/maxresdefault.jpg">
+                 
+                 <hr><br>
+                 <h4>"SUPER MARIO GALAXY 2 </h4>
+                 <p>
+                    <a href="https://www.metacritic.com/game/wii/super-mario-galaxy-2">Xem thêm</a>
+                 </p><br>
+                 
+             </div>
+         </div>
+
+    </div>   
+    <br>
+
+
+    <div class="main"></div>
+<div class="footer">
+  <div class="bubbles">
+    <div class="bubble" style="--size:4.932104213705972rem; --distance:9.597806485606824rem; --position:80.88742925943966%; --time:3.0042053769921138s; --delay:-3.1425227721553353s;"></div>
+    <div class="bubble" style="--size:4.718056081352498rem; --distance:8.846428651140343rem; --position:36.2821070187926%; --time:2.0039646241102855s; --delay:-2.1215723595718115s;"></div>
+    <div class="bubble" style="--size:2.627296043879105rem; --distance:6.756334825985771rem; --position:97.87201001705894%; --time:2.894787234743534s; --delay:-3.8687950250087613s;"></div>
+    <div class="bubble" style="--size:3.3489088041825648rem; --distance:9.14751073730182rem; --position:99.60638362783544%; --time:3.552875754215975s; --delay:-3.553459155728208s;"></div>
+    <div class="bubble" style="--size:3.6813222980842664rem; --distance:6.947333607678861rem; --position:33.91471575182473%; --time:2.314177108955685s; --delay:-2.898465873348156s;"></div>
+    <div class="bubble" style="--size:4.494191535915052rem; --distance:7.397050719308327rem; --position:46.59537100877671%; --time:3.4503997795852897s; --delay:-2.0214819340423733s;"></div>
+    <div class="bubble" style="--size:4.808100239715235rem; --distance:7.826303850702535rem; --position:13.121474032450728%; --time:3.86099521907227s; --delay:-3.251677129592057s;"></div>
+    <div class="bubble" style="--size:3.107706563368497rem; --distance:9.412570589612297rem; --position:9.208755666778439%; --time:3.5103221481135556s; --delay:-3.3626242411897564s;"></div>
+    <div class="bubble" style="--size:2.465000366754899rem; --distance:6.578830522741512rem; --position:12.386018895631175%; --time:2.3339712990068326s; --delay:-3.0634993416366862s;"></div>
+    <div class="bubble" style="--size:3.0808605695178235rem; --distance:8.978624082503718rem; --position:46.67286594302604%; --time:3.96859293906435s; --delay:-2.356787128433691s;"></div>
+    <div class="bubble" style="--size:5.211300424914503rem; --distance:7.669251700831988rem; --position:62.64161169778231%; --time:3.1699062306493935s; --delay:-2.0707600133990662s;"></div>
+    <div class="bubble" style="--size:4.088179158200622rem; --distance:8.48602393957351rem; --position:9.728076992095824%; --time:3.77525529116409s; --delay:-2.3579504309895123s;"></div>
+    <div class="bubble" style="--size:3.1220324209845964rem; --distance:7.505859871380601rem; --position:10.852292944972433%; --time:3.912895079096526s; --delay:-3.254877659300877s;"></div>
+    <div class="bubble" style="--size:3.909247008089391rem; --distance:6.718538268135609rem; --position:87.12820359567039%; --time:2.9219328291558218s; --delay:-2.750103414446495s;"></div>
+    <div class="bubble" style="--size:3.5627462603626263rem; --distance:8.30463676055849rem; --position:52.81006085395529%; --time:3.548995453574956s; --delay:-2.299144363515237s;"></div>
+    <div class="bubble" style="--size:4.56249058980438rem; --distance:7.2698034438195425rem; --position:4.239538831418502%; --time:3.9081162670402048s; --delay:-2.7033686002035213s;"></div>
+    <div class="bubble" style="--size:2.2915762599124143rem; --distance:8.225232494564063rem; --position:59.72229653157149%; --time:3.1780039202520065s; --delay:-3.5658931210915132s;"></div>
+    <div class="bubble" style="--size:5.1297524402182475rem; --distance:7.73445197779575rem; --position:13.688567905549323%; --time:3.331021530676568s; --delay:-2.558376496977984s;"></div>
+    <div class="bubble" style="--size:2.7511958427924528rem; --distance:7.645229872550763rem; --position:55.39709471291207%; --time:3.7348113616833576s; --delay:-2.9653928662333864s;"></div>
+    <div class="bubble" style="--size:3.045041515477954rem; --distance:8.30936225268307rem; --position:10.154928464773405%; --time:3.6685899245697184s; --delay:-3.9774224868052723s;"></div>
+    <div class="bubble" style="--size:3.6527916217398264rem; --distance:9.757331558759123rem; --position:14.961949464695383%; --time:2.8336312069765732s; --delay:-2.346937515455617s;"></div>
+    <div class="bubble" style="--size:2.347741277170612rem; --distance:8.124049540328262rem; --position:62.93045004911245%; --time:3.7623174120245473s; --delay:-3.356867270696223s;"></div>
+    <div class="bubble" style="--size:4.538225140976912rem; --distance:7.390171213359368rem; --position:50.77060615561741%; --time:3.3471926350727874s; --delay:-3.058448712112234s;"></div>
+    <div class="bubble" style="--size:3.702320232937966rem; --distance:9.06465491590519rem; --position:25.85044178313385%; --time:3.5786758158251777s; --delay:-2.648507087361113s;"></div>
+    <div class="bubble" style="--size:2.1131547059479354rem; --distance:7.563620657062443rem; --position:69.08884633281829%; --time:2.3354119980366215s; --delay:-3.5340326454948405s;"></div>
+    <div class="bubble" style="--size:4.612206596153405rem; --distance:9.002460307188493rem; --position:37.42994006785827%; --time:2.2214680610138817s; --delay:-2.3895352624662385s;"></div>
+    <div class="bubble" style="--size:3.9460655768132904rem; --distance:9.329426095394744rem; --position:61.52615213855451%; --time:2.065453596088163s; --delay:-2.084954642153555s;"></div>
+    <div class="bubble" style="--size:5.430478977417502rem; --distance:9.801338259323199rem; --position:43.18886496959564%; --time:3.1165924198137027s; --delay:-3.3076165556741635s;"></div>
+    <div class="bubble" style="--size:4.6595237320783935rem; --distance:9.379067818001047rem; --position:0.8334392253752849%; --time:2.86201613724985s; --delay:-2.1403952708850307s;"></div>
+    <div class="bubble" style="--size:5.78180434863206rem; --distance:6.746070765530124rem; --position:5.400367363438951%; --time:2.9180255551255145s; --delay:-2.1459664098027416s;"></div>
+    <div class="bubble" style="--size:5.789064209318404rem; --distance:7.401646959798328rem; --position:76.3664721999653%; --time:3.845720299202598s; --delay:-2.890520364862834s;"></div>
+    <div class="bubble" style="--size:3.120202947503774rem; --distance:8.056936602873737rem; --position:87.06247542822489%; --time:2.6227834469847795s; --delay:-3.369432500329432s;"></div>
+    <div class="bubble" style="--size:5.483726617035201rem; --distance:7.726387083078656rem; --position:39.12278557056983%; --time:3.9868047149983004s; --delay:-2.55771037890852s;"></div>
+    <div class="bubble" style="--size:3.6202539775909317rem; --distance:9.10785574877979rem; --position:26.40226361722536%; --time:3.042463312495924s; --delay:-2.867040785497957s;"></div>
+    <div class="bubble" style="--size:2.807753011861143rem; --distance:8.382322678799932rem; --position:37.77074051750407%; --time:2.4390623008901353s; --delay:-2.2186942699162167s;"></div>
+    <div class="bubble" style="--size:5.65662898457394rem; --distance:9.746222552337652rem; --position:99.58643269253376%; --time:3.154914512708709s; --delay:-2.3339267466676588s;"></div>
+    <div class="bubble" style="--size:2.407473868679075rem; --distance:6.9410686726947rem; --position:55.834306930880025%; --time:3.0480773966364696s; --delay:-2.2178085002442014s;"></div>
+    <div class="bubble" style="--size:3.8931130858749547rem; --distance:8.705236822216108rem; --position:28.2533461951438%; --time:3.013413043659289s; --delay:-3.4457126761308716s;"></div>
+    <div class="bubble" style="--size:2.852379348535756rem; --distance:7.410229245240777rem; --position:93.12161614480658%; --time:3.8986488106768697s; --delay:-2.3004930477308427s;"></div>
+    <div class="bubble" style="--size:3.4728629797713024rem; --distance:7.301357827124865rem; --position:84.40650880367758%; --time:3.804107999163374s; --delay:-3.0818433133173824s;"></div>
+    <div class="bubble" style="--size:3.494144535077445rem; --distance:9.304881584557844rem; --position:57.38104611450174%; --time:2.922028829036139s; --delay:-2.6981179103747s;"></div>
+    <div class="bubble" style="--size:5.882779998948735rem; --distance:9.704183243605168rem; --position:7.392881414691333%; --time:3.504010723224241s; --delay:-3.0130282323757287s;"></div>
+    <div class="bubble" style="--size:2.675814349969605rem; --distance:8.62193729943752rem; --position:5.399827230505199%; --time:3.673691371230434s; --delay:-2.4948332173274417s;"></div>
+    <div class="bubble" style="--size:4.550334592043757rem; --distance:9.582909809659828rem; --position:36.700919504535726%; --time:2.5958880856799036s; --delay:-2.8253904030893278s;"></div>
+    <div class="bubble" style="--size:4.475364080718592rem; --distance:6.0470719128605825rem; --position:51.85192713697511%; --time:2.680857614070049s; --delay:-2.488736135796016s;"></div>
+    <div class="bubble" style="--size:3.2692576508489086rem; --distance:6.123366550196144rem; --position:67.28180879687145%; --time:2.749532684850849s; --delay:-3.262451490681901s;"></div>
+    <div class="bubble" style="--size:5.123997795448478rem; --distance:9.186332072331211rem; --position:42.371661926595884%; --time:3.6700142473588007s; --delay:-3.821988421298063s;"></div>
+    <div class="bubble" style="--size:3.3739373294767123rem; --distance:9.304506982947084rem; --position:60.97034245667736%; --time:3.9197019927743604s; --delay:-3.803158889477266s;"></div>
+    <div class="bubble" style="--size:2.582129579420993rem; --distance:7.987611645316627rem; --position:-4.243859123187299%; --time:3.6468505079273243s; --delay:-2.674192552695236s;"></div>
+    <div class="bubble" style="--size:2.539707969953249rem; --distance:8.186357496627346rem; --position:93.04407515674313%; --time:2.357867779264953s; --delay:-3.353519295000384s;"></div>
+    <div class="bubble" style="--size:3.4315804747293885rem; --distance:9.33889777108488rem; --position:25.470516237003533%; --time:2.1498423819103807s; --delay:-2.2592083112480252s;"></div>
+    <div class="bubble" style="--size:2.9073780281013626rem; --distance:6.76628229706309rem; --position:17.255921890354514%; --time:2.1656127199081228s; --delay:-2.546480271071742s;"></div>
+    <div class="bubble" style="--size:2.0667244578126596rem; --distance:6.877299535231323rem; --position:45.909999828754046%; --time:2.0908690150802705s; --delay:-2.126273972867582s;"></div>
+    <div class="bubble" style="--size:5.063687264186915rem; --distance:7.393042350400615rem; --position:10.5182349160261%; --time:3.3818110953068494s; --delay:-3.4175184086893875s;"></div>
+    <div class="bubble" style="--size:5.748881776378736rem; --distance:8.85244318111527rem; --position:17.539978846856393%; --time:3.5052207133916076s; --delay:-3.3656369094485497s;"></div>
+    <div class="bubble" style="--size:5.360587942339701rem; --distance:9.929402594727609rem; --position:79.79009630912928%; --time:2.99035269108139s; --delay:-2.7528977056833126s;"></div>
+    <div class="bubble" style="--size:2.7484279600549257rem; --distance:7.700509137341619rem; --position:12.079834128047612%; --time:3.027664610069573s; --delay:-3.2281640106864566s;"></div>
+    <div class="bubble" style="--size:3.3121925839514006rem; --distance:8.03446259531691rem; --position:52.62019607352901%; --time:3.2040623707690545s; --delay:-3.6013786354972135s;"></div>
+    <div class="bubble" style="--size:2.3392931284733818rem; --distance:8.581214659832355rem; --position:94.53479021055387%; --time:3.8165926132992416s; --delay:-3.616442622400652s;"></div>
+    <div class="bubble" style="--size:5.981016085784415rem; --distance:9.11003301878918rem; --position:16.435699879310345%; --time:3.6622979959341073s; --delay:-2.2993120582924496s;"></div>
+    <div class="bubble" style="--size:2.7057957046367047rem; --distance:9.633349843183687rem; --position:54.55418277298053%; --time:3.60421626202613s; --delay:-2.0335052642275935s;"></div>
+    <div class="bubble" style="--size:2.7592563508719827rem; --distance:6.897019888671736rem; --position:-4.0760689865452555%; --time:3.863770445687493s; --delay:-2.8283549609534306s;"></div>
+    <div class="bubble" style="--size:5.751733043315883rem; --distance:7.711807235301399rem; --position:57.72105280568664%; --time:2.8092025778228567s; --delay:-2.3401872793941965s;"></div>
+    <div class="bubble" style="--size:5.835183488985023rem; --distance:7.692151402507048rem; --position:37.987121200584646%; --time:2.338329824650442s; --delay:-2.9956521043829873s;"></div>
+    <div class="bubble" style="--size:2.3774329854363287rem; --distance:8.457313526559794rem; --position:66.37674990342424%; --time:2.8488891943711194s; --delay:-3.9079580889193126s;"></div>
+    <div class="bubble" style="--size:5.655997010675726rem; --distance:6.705660911085037rem; --position:39.84331776452925%; --time:2.236458624892253s; --delay:-3.4009024550047884s;"></div>
+    <div class="bubble" style="--size:3.2662649082389628rem; --distance:6.23677488694098rem; --position:29.537090795738457%; --time:3.3338141348123087s; --delay:-2.6645113675192804s;"></div>
+    <div class="bubble" style="--size:3.0826033260527206rem; --distance:6.089294474461957rem; --position:79.96406164884304%; --time:2.5109473480181643s; --delay:-3.2443652410208337s;"></div>
+    <div class="bubble" style="--size:3.6287611538725004rem; --distance:7.560092249202791rem; --position:71.98632471662046%; --time:2.4379546427992103s; --delay:-2.7442066263448135s;"></div>
+    <div class="bubble" style="--size:4.733566659955566rem; --distance:9.556488070964885rem; --position:52.89110393335642%; --time:3.085031017448484s; --delay:-2.9571758423572683s;"></div>
+    <div class="bubble" style="--size:3.76978087636667rem; --distance:7.344358142067695rem; --position:25.402165879765775%; --time:2.7722080816721317s; --delay:-3.692464348583624s;"></div>
+    <div class="bubble" style="--size:4.572286186427566rem; --distance:8.125604130408817rem; --position:88.86533094293206%; --time:2.261875737457244s; --delay:-2.486329978063046s;"></div>
+    <div class="bubble" style="--size:5.3824604893970625rem; --distance:6.295487383053249rem; --position:101.70079252828529%; --time:3.8476209703568838s; --delay:-3.5762576739597587s;"></div>
+    <div class="bubble" style="--size:4.905149751008036rem; --distance:6.508444459449154rem; --position:88.35005850393598%; --time:2.6929751946337843s; --delay:-2.366109295921979s;"></div>
+    <div class="bubble" style="--size:4.731089041843477rem; --distance:9.835152367871164rem; --position:20.613591827450588%; --time:3.982706594419329s; --delay:-3.017474476632532s;"></div>
+    <div class="bubble" style="--size:5.3641556068005904rem; --distance:9.085155278457377rem; --position:59.2083380398429%; --time:2.9838402699218185s; --delay:-3.0817454782901135s;"></div>
+    <div class="bubble" style="--size:4.811949380545058rem; --distance:9.623012480087116rem; --position:46.866134306234656%; --time:2.2997993197728936s; --delay:-3.7482984380130073s;"></div>
+    <div class="bubble" style="--size:4.019246326153867rem; --distance:8.871577220420882rem; --position:93.9836954645672%; --time:3.978110951057969s; --delay:-2.9610384408636277s;"></div>
+    <div class="bubble" style="--size:5.510726643013593rem; --distance:6.090907392076157rem; --position:13.816042997744443%; --time:2.4835865683746974s; --delay:-2.4316172907833344s;"></div>
+    <div class="bubble" style="--size:3.743238637748953rem; --distance:8.641054603570442rem; --position:7.527103948477649%; --time:2.360950136628694s; --delay:-2.8947525635146505s;"></div>
+    <div class="bubble" style="--size:5.687556595920755rem; --distance:9.415552266171575rem; --position:77.9626532037881%; --time:3.0854684277270463s; --delay:-2.821340354867194s;"></div>
+    <div class="bubble" style="--size:4.129745683841925rem; --distance:8.870594186444993rem; --position:87.970589343702%; --time:3.293153236095395s; --delay:-3.972370030062018s;"></div>
+    <div class="bubble" style="--size:5.210844316627159rem; --distance:6.798725608901253rem; --position:7.536834200496539%; --time:2.154630241892372s; --delay:-2.7089327167252915s;"></div>
+    <div class="bubble" style="--size:2.1723090455896843rem; --distance:9.643580780430725rem; --position:38.048405363462074%; --time:3.916363828190556s; --delay:-2.4536713766490568s;"></div>
+    <div class="bubble" style="--size:2.274494586132099rem; --distance:8.00490029867008rem; --position:64.09240973914073%; --time:3.7795476348417028s; --delay:-3.1557304420673513s;"></div>
+    <div class="bubble" style="--size:3.6363935928992rem; --distance:9.468475413855469rem; --position:59.52916922816138%; --time:3.017971464993143s; --delay:-2.0588448233088155s;"></div>
+    <div class="bubble" style="--size:4.985663523559399rem; --distance:7.609622894971538rem; --position:93.2309741995776%; --time:2.596498444452602s; --delay:-2.580283614344272s;"></div>
+    <div class="bubble" style="--size:2.7347908785625084rem; --distance:9.107677764524183rem; --position:2.4581225961052677%; --time:2.870508366103907s; --delay:-3.3478207166295437s;"></div>
+    <div class="bubble" style="--size:2.025252227587104rem; --distance:8.546943213976666rem; --position:97.86998194420109%; --time:2.945434143224089s; --delay:-3.340686617361735s;"></div>
+    <div class="bubble" style="--size:5.337556852046062rem; --distance:6.754536297721525rem; --position:40.47724990142109%; --time:2.606776211926522s; --delay:-2.0827749212189626s;"></div>
+    <div class="bubble" style="--size:3.019025813825067rem; --distance:7.785895455423994rem; --position:19.183376409218596%; --time:3.223510942044367s; --delay:-2.06570999020722s;"></div>
+    <div class="bubble" style="--size:4.228372146206389rem; --distance:7.8928551670415965rem; --position:94.344293726445%; --time:3.7576707591510123s; --delay:-2.304717571271386s;"></div>
+    <div class="bubble" style="--size:2.0398067337806864rem; --distance:9.193103272170074rem; --position:69.86594458183598%; --time:3.196710582174887s; --delay:-3.7103471588151145s;"></div>
+    <div class="bubble" style="--size:5.7915886368731035rem; --distance:7.2045461634595656rem; --position:102.61064052512893%; --time:3.9533313041380227s; --delay:-2.872308358380803s;"></div>
+    <div class="bubble" style="--size:2.3275301481409523rem; --distance:9.718054098347505rem; --position:98.45858266309986%; --time:3.2571310381008924s; --delay:-3.0951544903263213s;"></div>
+    <div class="bubble" style="--size:3.4573142258676164rem; --distance:7.538041925098031rem; --position:22.362378862483776%; --time:3.945525322835504s; --delay:-2.9219786382017965s;"></div>
+    <div class="bubble" style="--size:2.8353551522863754rem; --distance:7.18718053505261rem; --position:73.63659937463892%; --time:2.9017483141088687s; --delay:-2.0703794485177585s;"></div>
+    <div class="bubble" style="--size:3.2881437095239754rem; --distance:9.046555805079473rem; --position:80.59684130003113%; --time:2.408931778366155s; --delay:-2.0572867283762064s;"></div>
+    <div class="bubble" style="--size:2.697105466618785rem; --distance:7.6453529643270235rem; --position:23.762325413438585%; --time:2.981397232168517s; --delay:-3.853205399921374s;"></div>
+    <div class="bubble" style="--size:2.2914569416082706rem; --distance:6.8570450717471365rem; --position:53.950070675558926%; --time:2.778964963152058s; --delay:-2.9436472824796254s;"></div>
+    <div class="bubble" style="--size:5.749086835519529rem; --distance:9.33537447882497rem; --position:65.80373024922298%; --time:3.3854035743481004s; --delay:-3.2665557186592364s;"></div>
+    <div class="bubble" style="--size:5.125384739228048rem; --distance:7.055918294093706rem; --position:1.2986108359117354%; --time:3.868549497857039s; --delay:-3.015640113052405s;"></div>
+    <div class="bubble" style="--size:5.377802232287659rem; --distance:8.91268431220648rem; --position:85.67015256412023%; --time:3.092776032670072s; --delay:-3.2643756803175665s;"></div>
+    <div class="bubble" style="--size:5.7187088872914424rem; --distance:6.258517914713278rem; --position:100.83294449137267%; --time:2.214629886433045s; --delay:-2.80594480979517s;"></div>
+    <div class="bubble" style="--size:5.422338797408246rem; --distance:8.16254053691148rem; --position:30.504831268056634%; --time:3.4091981469201293s; --delay:-2.7341074302928643s;"></div>
+    <div class="bubble" style="--size:4.02411527952653rem; --distance:6.190673262460737rem; --position:64.86119988842442%; --time:2.0884124394096344s; --delay:-2.5016948971344295s;"></div>
+    <div class="bubble" style="--size:5.316115676174604rem; --distance:9.95240278723088rem; --position:66.31673701726436%; --time:2.537656573450922s; --delay:-3.4944485112891797s;"></div>
+    <div class="bubble" style="--size:4.697646780388703rem; --distance:8.118641176231474rem; --position:23.695939247126315%; --time:3.3315039716601347s; --delay:-2.7621215667294816s;"></div>
+    <div class="bubble" style="--size:2.534863907559041rem; --distance:8.262017643914154rem; --position:-0.3988541140485484%; --time:3.8393536667503985s; --delay:-2.5575935007290984s;"></div>
+    <div class="bubble" style="--size:4.957668337002801rem; --distance:7.465971305553836rem; --position:40.4933284603636%; --time:3.733009794615008s; --delay:-3.6461118222243005s;"></div>
+    <div class="bubble" style="--size:3.9404837848882286rem; --distance:8.86122708323203rem; --position:51.93823984076881%; --time:3.756017881771937s; --delay:-2.2728431882979074s;"></div>
+    <div class="bubble" style="--size:5.546050609756334rem; --distance:9.361175579972747rem; --position:50.34502599611423%; --time:3.7682501576132648s; --delay:-2.2375923366738495s;"></div>
+    <div class="bubble" style="--size:4.446681679528219rem; --distance:8.933286773548248rem; --position:39.47324964882873%; --time:3.323108543995916s; --delay:-3.98565177707663s;"></div>
+    <div class="bubble" style="--size:4.689589968535954rem; --distance:6.990555013402695rem; --position:59.03413804623837%; --time:2.8165854838686393s; --delay:-3.1930714596139977s;"></div>
+    <div class="bubble" style="--size:4.6468817467518235rem; --distance:6.894382493436599rem; --position:46.45324106734066%; --time:3.5912259865366924s; --delay:-3.5073779792371624s;"></div>
+    <div class="bubble" style="--size:4.742106898827098rem; --distance:8.968746263528686rem; --position:44.301505250151415%; --time:2.0635029742397055s; --delay:-3.3533656221371424s;"></div>
+    <div class="bubble" style="--size:5.435739276877839rem; --distance:9.981801763277847rem; --position:38.05503701436476%; --time:2.093130723621582s; --delay:-3.5141987037265077s;"></div>
+    <div class="bubble" style="--size:3.322037038675785rem; --distance:6.1599615205889195rem; --position:95.95595806637067%; --time:3.924512407369237s; --delay:-2.197828059985868s;"></div>
+    <div class="bubble" style="--size:2.175296731733238rem; --distance:8.94553264773241rem; --position:76.59139924608594%; --time:3.172585390007739s; --delay:-2.5840450238465866s;"></div>
+    <div class="bubble" style="--size:2.4690240674146953rem; --distance:7.331269744712163rem; --position:68.43445504079494%; --time:2.1972532038727164s; --delay:-3.338321231855784s;"></div>
+    <div class="bubble" style="--size:5.28351372542068rem; --distance:9.037946572574612rem; --position:42.701101863102394%; --time:3.4981515581529976s; --delay:-3.6764938890380363s;"></div>
+    <div class="bubble" style="--size:4.316640371630151rem; --distance:8.300110254216154rem; --position:7.072347615637916%; --time:3.3430767401761483s; --delay:-2.15366021204302s;"></div>
+    <div class="bubble" style="--size:5.388404072444811rem; --distance:7.986408092675146rem; --position:30.552430795940346%; --time:3.3299776386723083s; --delay:-2.8119255596997403s;"></div>
+    <div class="bubble" style="--size:2.480233109424187rem; --distance:9.33930953759447rem; --position:38.80523862645622%; --time:2.4992855933293914s; --delay:-2.1774268864502893s;"></div>
+    <div class="bubble" style="--size:4.645416021485748rem; --distance:7.172671297498017rem; --position:11.25430891052044%; --time:2.3417127778667397s; --delay:-2.8107474834530266s;"></div>
+    <div class="bubble" style="--size:3.428935570701592rem; --distance:9.925564183921416rem; --position:85.74395293895583%; --time:3.2546881516841815s; --delay:-3.132720205273582s;"></div>
+    <div class="bubble" style="--size:2.74094873491262rem; --distance:7.591073919576659rem; --position:40.116756524664495%; --time:2.329400337309681s; --delay:-3.84009305515244s;"></div>
+    <div class="bubble" style="--size:5.385181950458552rem; --distance:8.797631979239888rem; --position:-2.506776161188875%; --time:2.0364982359267265s; --delay:-2.2674355186558066s;"></div>
+  </div>
+
+
+  <div style="font-size: 20px;font-family: 'Space Mono', monospace; " class="content " >
+    <div>
+      <div><b >NEW&EVENT</b><a class="item" style="font-family: 'Space Mono', monospace; color:red!important" href="#">PC</a><a style="font-family: 'Space Mono', monospace" href="#">PlayStation</a><a style="font-family: 'Space Mono', monospace" href="#">Mobile</a><a style="font-family: 'Space Mono', monospace" href="#">XBOX</a><a class="item" style="font-family: 'Space Mono', monospace" href="#">Switch</a></div>
+      <div><b >BESTS</b><a style="font-family: 'Space Mono', monospace" href="#"> Game of the Year </a><a style="font-family: 'Space Mono', monospace" href="#"> Game of All Time </a><a style="font-family: 'Space Mono', monospace" href="#">New Games</a></div>
+      <div><b>REVIEW</b><a class="item" style="font-family: 'Space Mono', monospace" href="#">ADVENTURE</a><a class="item" style="font-family: 'Space Mono', monospace" href="#">BOARD & CARD</a><a style="font-family: 'Space Mono', monospace" href="#">PUZZLE</a><a style="font-family: 'Space Mono', monospace" href="#">MULTIPLAYER</a><a style="font-family: 'Space Mono', monospace" href="#">SPORTS</a><a style="font-family: 'Space Mono', monospace" href="#">STRATEGY</a><a style="font-family: 'Space Mono', monospace" href="#">SPECIALS</a></div>
+    </div>
+    <div><a class="image" href="#"></a>
+        <img src="https://scontent.fhan2-5.fna.fbcdn.net/v/t1.15752-9/130779752_2885941484970550_7174886012815255459_n.png?_nc_cat=109&amp;ccb=2&amp;_nc_sid=ae9488&amp;_nc_ohc=kA0g9WfKUZwAX_QtBKl&amp;_nc_ht=scontent.fhan2-5.fna&amp;oh=ccba668fdadba4814cb44fa411ff655b&amp;oe=5FFB9751" style="
+    width: 200px;
+">
+      <p>SPACEGAME</p>
+    </div>
+  </div>
+</div>
+
+
+
+<svg style="position: fixed; top: 100vh">
+  <defs>
+    <filter id="blob">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="blob"></feColorMatrix>
+      <feComposite in="SourceGraphic" in2="blob" operator="atop"></feComposite>
+    </filter>
+  </defs>
+</svg>
+   
+
+
+
+
+
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
+
+

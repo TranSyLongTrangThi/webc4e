@@ -1,0 +1,149 @@
+@font-face{
+    src: url(/Users/vohuo/OneDrive/Desktop/BTL/fonts/SpaceSquadron-2mEw.ttf);
+    font-family: spaceship;
+    src: url(/Users/vohuo/OneDrive/Desktop/BTL/fonts/SpaceSquadron-eRo3.ttf);
+    font-family: spacefont; 
+    
+}
+.font-1{
+    font-family: spaceship;
+}
+.font-2{
+    font-family: spacefont;
+}
+
+body{
+    font-family: spacefont;
+    /* font-family: 'Space Mono', monospace; */
+    color: #312f2f;
+    font-size: 30px;
+    background-size: cover;
+}
+
+nav{
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    background-color:black!important
+}
+
+.contain{
+    margin: 0px 70px;
+    background-color: none;
+  } 
+
+a:hover{ text-decoration:none; }
+.navbar-brand{text-decoration:none;}
+
+
+.blue-violet-darker-hover {
+    color: white!important;
+    -webkit-transition: .7s;
+    transition: .7s; }
+
+
+.navcol {
+    color:  white!important;
+    margin: 10px;
+}
+.navcol:hover{
+    transition: .5s;
+    color: #eb15a0!important;
+}
+.dropdown-menu{
+    background-color: #444242;
+}
+.dropdown-item{
+    color:  white;
+}
+.dropdown-item:hover{
+    background-color: #b5be2c;
+    color:white
+}
+.carousel-item img{
+    height: 565px;
+
+}
+.slidecol h4{
+    color: #f8f8f8
+}
+.logo img{
+    height: 70px;
+    width: 90px;
+}
+.slide{
+    padding: 20px 0px;
+}
+.hot li{
+height: 300px;
+width:300px ;
+}
+
+.cont{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.slidecol{
+    padding:30px
+}
+.hots{
+    color:rgb(255, 254, 254);
+}
+.games{
+    padding: 20px;
+}
+
+.hello {
+    display: none;
+}
+
+#ac:hover .hello{
+    display: block;
+}
+
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:#eb15a0;
+    transition: width 0.4s linear;
+    }
+
+    .searchbar:hover > .search_icon{
+    background: white;
+    transition: .5s;
+    color: #eb15a0;
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    }
